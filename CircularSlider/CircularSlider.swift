@@ -141,7 +141,7 @@ public struct CircularSlider: View {
                 tempValue = value
                 angleValue = fixedAngle * 180 / .pi // converting to degree
             }
-            complition(tempValue.rounded())
+            completion(tempValue.rounded())
         }
     }
 }
