@@ -22,9 +22,9 @@ public struct Config {
     let sliderColor : LinearGradient
     let startPointCircleColor : RadialGradient
     let pointCircleColor : RadialGradient
-    let text : String
+    let titleText : String
     
-    public init(minimumValue:CGFloat,maximumValue:CGFloat,totalValue: CGFloat,knobRadius: CGFloat,radius: CGFloat,outercircleColor : Color,innercircleColor : RadialGradient,lineColor : Color,lineWidth : CGFloat,tickColor : Color,tickhighlightedColor : Color,sliderColor : LinearGradient,startPointCircleColor : RadialGradient,pointCircleColor : RadialGradient,text : String) {
+    public init(minimumValue:CGFloat,maximumValue:CGFloat,totalValue: CGFloat,knobRadius: CGFloat,radius: CGFloat,outercircleColor : Color,innercircleColor : RadialGradient,lineColor : Color,lineWidth : CGFloat,tickColor : Color,tickhighlightedColor : Color,sliderColor : LinearGradient,startPointCircleColor : RadialGradient,pointCircleColor : RadialGradient,titleText : String) {
         
         self.minimumValue = minimumValue
         self.maximumValue = maximumValue
@@ -40,7 +40,7 @@ public struct Config {
         self.sliderColor = sliderColor
         self.startPointCircleColor = startPointCircleColor
         self.pointCircleColor = pointCircleColor
-        self.text = text
+        self.titleText = text
     }
 }
 
@@ -101,7 +101,7 @@ public struct CircularSlider: View {
                 )
 
             VStack {
-                Text("\(config.text)")
+                Text("\(config.titleText)")
                     .font(.system(size: (config.radius / 7)))
                                 .italic()
 
