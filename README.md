@@ -54,7 +54,8 @@ Configration for Circular Slider with completion
                                   tickhighlightedColor: Color.white,
                                   sliderColor: gradientSlider,
                                   startPointCircleColor: startPointColor,
-                                  pointCircleColor: pointColor
+                                  pointCircleColor: pointColor,
+                                  titleText : "Monday"
                                   ),
                                   completion: { (value) in
                                       print(value) // Geting slider value 
@@ -104,6 +105,8 @@ The slider start circle color set RadialGradient.init
 ##### pointCircleColor
 The slider drag circle color set RadialGradient.init
 
+##### titleText
+set Title text in circle 
 
 #### CallBack
 
