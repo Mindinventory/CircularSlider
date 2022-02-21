@@ -40,7 +40,7 @@ public struct Config {
         self.sliderColor = sliderColor
         self.startPointCircleColor = startPointCircleColor
         self.pointCircleColor = pointCircleColor
-        self.titleText = text
+        self.titleText = titleText
     }
 }
 
