@@ -58,22 +58,19 @@ public struct CircularSlider: View {
         ZStack {
             Circle()
                 .fill(config.outercircleColor)
-                .frame(width: config.radius + 60, height: config.radius + 60)
-                .scaleEffect(1.2)
+                .frame(width: (config.radius * 1.75) , height: (config.radius * 1.75))
 
             Circle()
                 .fill(config.innercircleColor)
-                .frame(width: config.radius + 20, height: config.radius + 20)
-                .padding(-4)
+                .frame(width: config.radius * 1.3, height: config.radius * 1.3)
+                .padding(-(config.radius / 20))
                 .overlay(
                     Circle().stroke(config.lineColor, lineWidth: config.lineWidth)
                 )
-                .scaleEffect(1.2)
-
-
+            
             ForEach(0..<20) { tick in
                 self.tick(at: tick)
-                .frame(width: (config.radius * 2) + 14, height: (config.radius * 2) + 14)
+                    .frame(width: (config.radius * 2.15), height: (config.radius * 2.15))
             }
 
             Circle()
@@ -103,11 +100,11 @@ public struct CircularSlider: View {
 
             VStack {
                 Text("\(String.init(format: "Monday"))")
-                                .font(.system(size: config.radius - 110))
+                    .font(.system(size: (config.radius / 7)))
                                 .italic()
 
                 Text("\(String.init(format: "%.0f", tempValue))%")
-                                .font(.system(size: config.radius - 90))
+                                .font(.system(size: (config.radius / 3)))
                                 .italic()
             }
         }
@@ -132,7 +129,7 @@ public struct CircularSlider: View {
 
         // convert angle range from (-pi to pi) to (0 to 2pi)
         let fixedAngle = angle < 0.0 ? angle + 2.0 * .pi : angle
-        // convert angle value to temperature value
+        // convert angle value to temp value
         let value = fixedAngle / (2.0 * .pi) * config.totalValue
 
         if value >= config.minimumValue && value <= config.maximumValue {
