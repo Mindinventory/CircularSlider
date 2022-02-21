@@ -1,4 +1,4 @@
-# CircularSlider SwiftUI
+# Circular Slider SwiftUI
 
 <a href="https://docs.swift.org/swift-book/" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/swift-5.0-brightgreen">
@@ -16,9 +16,7 @@
 
 Discover the world 🌎 around you..!!!
 
-The Radar Kit allowing you to locate places, trip neary by you Or it will help you to search out the people around you with the few lines of code..!!!
-
-![gif](/Screenshots/RadarView.gif)
+A powerful Circular Slider. It's written in SwiftUI
 
 To run the example project, clone the repo, and run `pod install` from the Example directory.
 <br />
@@ -27,106 +25,94 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - Xcode 12.5+
 
 ## Installation
+Circular Slider is available through CocoaPods. To install it, simply add the following line to your Podfile:
+
 To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'CircularSlider', git: 'https://github.com/PiyushSelarka/CircularSlider.git', branch: 'main'
 ```
 ## Usage
-
-1. Change the class of a view from UIView to CustomRadarView
+Added import CircularSlider
 ```swift
-@IBOutlet private weak var radarView: CustomRadarView!
-```
-2. Programmatically:
-
-```swift
-let radarView = CustomRadarView(frame: myFrame)
-
+import CircularSlider
 ```
 
-## Customization 
-
+## Config 
+Configration for Circular Slider with completion
 ```swift
-    private func configureRadarView() {
-        
-        radarView.delegate = self
-        radarView.dataSource = self
-        radarView.diskRadius = 0.0
-        radarView.dotColor = .ringStroke.filterNil
-        radarView.circleOnColor = .ringOnColor.filterNil
-        radarView.circleOffColor = .ringStroke.filterNil
-        radarView.numberOfCircles = 4
-        radarView.isRotateRingAnimation = true
-        radarView.paddingBetweenCircle = 36
-        radarView.paddingBetweenItems = 20
-    }
+    CircularSlider(config: Config(minimumValue: 0.0,
+                                  maximumValue: 100,
+                                  totalValue: 100,
+                                  knobRadius: 10,
+                                  radius: 125,
+                                  outercircleColor: colorCircle,
+                                  innercircleColor:innerColor,
+                                  lineColor: Color(UIColor.lightGray),
+                                  lineWidth: 1.0,
+                                  tickColor: Color.gray,
+                                  tickhighlightedColor: Color.white,
+                                  sliderColor: gradientSlider,
+                                  startPointCircleColor: startPointColor,
+                                  pointCircleColor: pointColor
+                                  ),
+                                  completion: { (value) in
+                                      print(value) // Geting slider value 
+                                  }
+    )
 ```
 
-##### diskRadius
-The radius of the central disk in the view, if you would like to hide it, you can set the radius to 0
+##### minimumValue
+The Slider of the minimumValue set in CGFlote
 
-##### diskColor
-The color of the central disk in the view, the default color is ripplePink color
+##### maximumValue
+The Slider of the maximumValue set in CGFlote
 
-##### minimumCircleRadius
-This property make distance between the first circle and the central disk  
+##### totalValue
+The totalValue for trimming line set in CGFlote  
 
-##### numberOfCircles
-The number of circles to draw around the disk, the default value is 3
+##### knobRadius
+The start and and points circle radius
 
-##### paddingBetweenCircle
-The padding between circles, circles could be drawn outside the frame 
+##### radius
+The radius for circular slider 
 
-##### circleOffColor
-The color of the off status of the circle, used for animation
+##### outercircleColor
+The color of back circle set Color.init
 
-##### circleOnColor
-The color of the on status of the circle, used for animation
+##### innercircleColor
+The color of inner side circle set RadialGradient.init
 
-##### animationDuration
-The duration of the animation, the default value is 0.9
-<br />
-You can start/ stop the animation at any time by calling `startAnimation()` & `stopAnimation()`
+##### lineColor
+The color of line in inner circle set Color.init
 
-#### isRotateRingAnimation
-Allows circle to rotate, used for animation
+##### lineWidth
+The width of line in inner circle set CGFlote.init
 
-#### dotColor
-The color of the two dots which place at two end of circle,
+##### tickColor
+The color of tick in 360 degree circle set Color.init
 
-##### paddingBetweenItems
-The padding between items, the default value is 10
+##### tickhighlightedColor
+The color of tick highlighted in 360 degree circle set Color.init
 
-## Add items 
-If you would like to add one item, use the method `add(item:using:)`
-If you would like to add multiple items, it's recommended to use the method `add(items:using:)` for more detail and information please refer `Example` project
+##### sliderColor
+The color of slider set LinearGradient.init
 
-#### remove an item 
-For removal of an item, use the method `remove(item:)`
+##### startPointCircleColor
+The slider start circle color set RadialGradient.init
 
-#### Customise an item 
-If you would like to customize items, use the protocol `RadarViewDataSource` and implement: 
+##### pointCircleColor
+The slider drag circle color set RadialGradient.init
 
-```swift
-radarView?.dataSource = self 
-...
-func radarView(radarView: RadarView, viewFor item: Item, preferredSize: CGSize) -> UIView {
-        let myCustomItemView = UIView(frame: CGRect(x: 0, y: 0, width: preferredSize.width, height: preferredSize.height))
-        return myCustomItemView
-}
-```
 
 #### CallBack
-Action on items can be detected using the protocol `RadarViewDelegate` and implement: 
+
 ```swift
-radarView?.delegate = self 
-...
- func radarView(radarView: RadarView, didSelect item: Item) {
-        print(item.uniqueKey)
+completion: { (value) in
+    print(value) // Getting slider value 
 }
 ```
 
 ## License
-MI-RadarKit is [MIT-licensed](/LICENSE).
+MI-Circular Slider is [MIT-licensed](/LICENSE).
 
