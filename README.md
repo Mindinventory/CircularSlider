@@ -42,26 +42,26 @@ import CircularSlider
 ## Config 
 Configration for Circular Slider with completion
 ```swift
-    CircularSlider(config: Config(minimumValue: 0.0,
-                                  maximumValue: 100,
-                                  totalValue: 100,
-                                  knobRadius: 10,
-                                  radius: 125,
-                                  outercircleColor: colorCircle,
-                                  innercircleColor:innerColor,
-                                  lineColor: Color(UIColor.lightGray),
-                                  lineWidth: 1.0,
-                                  tickColor: Color.gray,
-                                  tickhighlightedColor: Color.white,
-                                  sliderColor: gradientSlider,
-                                  startPointCircleColor: startPointColor,
-                                  pointCircleColor: pointColor,
-                                  titleText : "Monday"
-                                  ),
-                                  completion: { (value) in
-                                      print(value) // Getting slider value 
-                                  }
-    )
+CircularSlider(config: Config(minimumValue: 0.0,
+                              maximumValue: 100,
+                              totalValue: 100,
+                              knobRadius: 10
+                              radius: 125,
+                              outercircleColor: Color.init(red: 64/255, green: 66/255, blue: 131/255),
+                              innercircleColor: RadialGradient(gradient: Gradient(colors: [.white, .gray]), center: .center, startRadius: 50, endRadius: 100),
+                              lineColor: Color(UIColor.lightGray),
+                              lineWidth: 1.0,
+                              tickColor: Color.gray,
+                              tickhighlightedColor: Color.white,
+                              sliderColor: LinearGradient(gradient: Gradient(colors: [.blue, .white]),startPoint: .topLeading, endPoint: .bottomLeading),
+                              startPointCircleColor: RadialGradient(gradient: Gradient(colors: [.white, .blue,]), center: .center, startRadius: 0, endRadius: 7),
+                              pointCircleColor: RadialGradient(gradient: Gradient(colors: [.blue, .white]), center: .center, startRadius: 0, endRadius: 7),
+                              titleText: "Monday"
+                             ),
+                             completion: { (value) in
+                                  print(value) // Getting slider value 
+                             }
+)
 ```
 
 ##### minimumValue
