@@ -13,6 +13,7 @@
 <p></p> 
 
 ## Preview
+Circular Slider is a flexible and customizable implementation 
 
 ![CircularSlider](https://user-images.githubusercontent.com/42262083/155064973-88f3637f-6d8c-4a2f-a555-df9d0ce6f24d.gif)
 
@@ -25,7 +26,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - Xcode 12.5+
 
 ## Installation
-Circular Slider is available through CocoaPods. To install it, simply add the following line to your Podfile:
+Circular Slider is available through [CocoaPods](https://cocoapods.org/). To install it, simply add the following line to your Podfile:
 
 To install it, simply add the following line to your Podfile:
 
