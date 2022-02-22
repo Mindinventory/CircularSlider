@@ -16,6 +16,8 @@
 
 Discover the world 🌎 around you..!!!
 
+![CircularSlider](https://user-images.githubusercontent.com/42262083/155064973-88f3637f-6d8c-4a2f-a555-df9d0ce6f24d.gif)
+
 A powerful Circular Slider. It's written in SwiftUI
 
 To run the example project, clone the repo, and run `pod install` from the Example directory.
@@ -64,16 +66,16 @@ Configration for Circular Slider with completion
 ```
 
 ##### minimumValue
-The Slider of the minimumValue set in CGFlote
+The Slider of the minimumValue set in CGFlote.init
 
 ##### maximumValue
-The Slider of the maximumValue set in CGFlote
+The Slider of the maximumValue set in CGFlote.init
 
 ##### totalValue
-The totalValue for trimming line set in CGFlote  
+The totalValue for trimming line set in CGFlote.init  
 
 ##### knobRadius
-The start and and points circle radius
+The start and and points circle radius 
 
 ##### radius
 The radius for circular slider 
