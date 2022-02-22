@@ -14,8 +14,6 @@
 
 ## Preview
 
-Discover the world 🌎 around you..!!!
-
 ![CircularSlider](https://user-images.githubusercontent.com/42262083/155064973-88f3637f-6d8c-4a2f-a555-df9d0ce6f24d.gif)
 
 A powerful Circular Slider. It's written in SwiftUI
