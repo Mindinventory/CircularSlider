@@ -60,7 +60,7 @@ Configration for Circular Slider with completion
                                   titleText : "Monday"
                                   ),
                                   completion: { (value) in
-                                      print(value) // Geting slider value 
+                                      print(value) // Getting slider value 
                                   }
     )
 ```
