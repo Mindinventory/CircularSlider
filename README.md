@@ -13,8 +13,9 @@
 <p></p> 
 
 ## Preview
+Circular Slider is a flexible and customizable implementation 
 
-Discover the world 🌎 around you..!!!
+![CircularSlider](https://user-images.githubusercontent.com/42262083/155064973-88f3637f-6d8c-4a2f-a555-df9d0ce6f24d.gif)
 
 A powerful Circular Slider. It's written in SwiftUI
 
@@ -25,7 +26,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - Xcode 12.5+
 
 ## Installation
-Circular Slider is available through CocoaPods. To install it, simply add the following line to your Podfile:
+Circular Slider is available through [CocoaPods](https://cocoapods.org/). To install it, simply add the following line to your Podfile:
 
 To install it, simply add the following line to your Podfile:
 
@@ -54,25 +55,26 @@ Configration for Circular Slider with completion
                                   tickhighlightedColor: Color.white,
                                   sliderColor: gradientSlider,
                                   startPointCircleColor: startPointColor,
-                                  pointCircleColor: pointColor
+                                  pointCircleColor: pointColor,
+                                  titleText : "Monday"
                                   ),
                                   completion: { (value) in
-                                      print(value) // Geting slider value 
+                                      print(value) // Getting slider value 
                                   }
     )
 ```
 
 ##### minimumValue
-The Slider of the minimumValue set in CGFlote
+The Slider of the minimumValue set in CGFlote.init
 
 ##### maximumValue
-The Slider of the maximumValue set in CGFlote
+The Slider of the maximumValue set in CGFlote.init
 
 ##### totalValue
-The totalValue for trimming line set in CGFlote  
+The totalValue for trimming line set in CGFlote.init  
 
 ##### knobRadius
-The start and and points circle radius
+The start and and points circle radius 
 
 ##### radius
 The radius for circular slider 
@@ -104,6 +106,8 @@ The slider start circle color set RadialGradient.init
 ##### pointCircleColor
 The slider drag circle color set RadialGradient.init
 
+##### titleText
+set Title text in circle 
 
 #### CallBack
 
