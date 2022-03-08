@@ -23,8 +23,9 @@ public struct Config {
     let startPointCircleColor : RadialGradient
     let pointCircleColor : RadialGradient
     let titleText : String
-    
-    public init(minimumValue:CGFloat,maximumValue:CGFloat,totalValue: CGFloat,knobRadius: CGFloat,radius: CGFloat,outercircleColor : Color,innercircleColor : RadialGradient,lineColor : Color,lineWidth : CGFloat,tickColor : Color,tickhighlightedColor : Color,sliderColor : LinearGradient,startPointCircleColor : RadialGradient,pointCircleColor : RadialGradient,titleText : String) {
+    let totalProgressView : CGFloat
+
+    public init(minimumValue:CGFloat,maximumValue:CGFloat,totalValue: CGFloat,knobRadius: CGFloat,radius: CGFloat,TotalProgressView : CGFloat,outercircleColor : Color,innercircleColor : RadialGradient,lineColor : Color,lineWidth : CGFloat,tickColor : Color,tickhighlightedColor : Color,sliderColor : LinearGradient,startPointCircleColor : RadialGradient,pointCircleColor : RadialGradient,titleText : String) {
         
         self.minimumValue = minimumValue
         self.maximumValue = maximumValue
@@ -41,6 +42,8 @@ public struct Config {
         self.startPointCircleColor = startPointCircleColor
         self.pointCircleColor = pointCircleColor
         self.titleText = titleText
+        self.totalProgressView = TotalProgressView
+
     }
 }
 
@@ -53,6 +56,7 @@ public struct CircularSlider: View {
     
     public init(config: Config, completion: @escaping ((CGFloat) -> Void)) {
         self.config = config
+        tempValue = self.config.totalProgressView
         self.completion = completion
     }
 
@@ -96,7 +100,8 @@ public struct CircularSlider: View {
                 .shadow(color: .blue, radius: 10)
                 .gesture(DragGesture(minimumDistance: 0.0)
                     .onChanged({ value in
-                                change(location: value.location)
+                        change(location: value.location)
+                       
                     })
                 )
 
