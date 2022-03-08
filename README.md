@@ -13,11 +13,14 @@
 <p></p> 
 
 ## Preview
-Circular Slider is a flexible and customizable implementation 
+
+Keeping a regular check on the progress of project completion is a bit difficult, but not any more, We have created our own custom progress view to meausre the progress of individual project on individual day based on the task completion.That help us to genrate daily report with the spacific numbers.
+
+Using Circular progress view Now it's no longer difficult to measure the bang on results!
 
 ![gif](/Screenshots/circularprogress.gif)
 
-A powerful Circular Slider. It's written in SwiftUI
+A powerful Circular Slider which has been written in SwiftUI
 
 To run the example project, clone the repo, and run `pod install` from the Example directory.
 <br />
@@ -46,7 +49,7 @@ CircularSlider(config: Config(minimumValue: 0.0,
                               maximumValue: 100,
                               totalValue: 100,
                               knobRadius: 10,
-                              radius: 125,
+                              radius: 125,TotalProgressView: 20.0
                               outercircleColor: Color.init(red: 64/255, green: 66/255, blue: 131/255),
                               innercircleColor: RadialGradient(gradient: Gradient(colors: [.white, .gray]), center: .center, startRadius: 50, endRadius: 100),
                               lineColor: Color(UIColor.lightGray),
@@ -108,6 +111,9 @@ The slider drag circle color set RadialGradient.init
 
 ##### titleText
 set Title text in circle 
+
+##### TotalProgressView
+When you want to put a static number to show the progress only then you can pass the number in this property which will help you to show the circular bar based on the value you pass
 
 #### CallBack
 
