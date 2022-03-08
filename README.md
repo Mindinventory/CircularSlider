@@ -68,46 +68,46 @@ CircularSlider(config: Config(minimumValue: 0.0,
 ```
 
 ##### minimumValue
-The Slider of the minimumValue set in CGFlote.init
+Minimum Value of the slider or you can say start value for the slider. It will set in CGFlote.init
 
 ##### maximumValue
-The Slider of the maximumValue set in CGFlote.init
+Maximum value for the slider which is set in CGFlote.init
 
 ##### totalValue
-The totalValue for trimming line set in CGFlote.init  
+TotalValue will help to meauser progress of the cirle while moving which should be equal to maximum value 
 
 ##### knobRadius
-The start and and points circle radius 
+The Radius of the know that how large you want to show
 
 ##### radius
-The radius for circular slider 
+Size or area of Progress view which can be define by radius
 
 ##### outercircleColor
-The color of back circle set Color.init
+The color of back circle set in Color.init
 
 ##### innercircleColor
-The color of inner side circle set RadialGradient.init
+The color of inner side circle set in RadialGradient.init
 
 ##### lineColor
-The color of line in inner circle set Color.init
+The color of line in inner circle set in Color.init
 
 ##### lineWidth
-The width of line in inner circle set CGFlote.init
+The width of line in inner circle set in CGFlote.init
 
 ##### tickColor
-The color of tick in 360 degree circle set Color.init
+The color of tick in 360 degree circle set in Color.init
 
 ##### tickhighlightedColor
-The color of tick highlighted in 360 degree circle set Color.init
+The color of tick highlighted in 360 degree circle set in Color.init
 
 ##### sliderColor
-The color of slider set LinearGradient.init
+The color of slider set in LinearGradient.init
 
 ##### startPointCircleColor
-The slider start circle color set RadialGradient.init
+The slider start circle color set in RadialGradient.init
 
 ##### pointCircleColor
-The slider drag circle color set RadialGradient.init
+The slider drag circle color set in RadialGradient.init
 
 ##### titleText
 set Title text in circle 
