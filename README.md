@@ -15,7 +15,7 @@
 ## Preview
 Circular Slider is a flexible and customizable implementation 
 
-![CircularSlider](https://user-images.githubusercontent.com/42262083/155064973-88f3637f-6d8c-4a2f-a555-df9d0ce6f24d.gif)
+![gif](/Screenshots/circularprogress.gif)
 
 A powerful Circular Slider. It's written in SwiftUI
 
