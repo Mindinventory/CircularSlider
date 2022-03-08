@@ -1,4 +1,4 @@
-# Circular Slider SwiftUI
+# Annular ProgressView 
 
 <a href="https://docs.swift.org/swift-book/" style="pointer-events: stroke;" target="_blank">
 <img src="https://img.shields.io/badge/swift-5.0-brightgreen">
@@ -16,7 +16,7 @@
 
 Keeping a regular check on the progress of project completion is a bit difficult, but not any more, We have created our own custom progress view to meausre the progress of individual project on individual day based on the task completion.That help us to genrate daily report with the spacific numbers.
 
-Using Circular progress view Now it's no longer difficult to measure the bang on results!
+Using Annular progress view now it's no longer difficult to measure the bang on results!
 
 ![gif](/Screenshots/circularprogress.gif)
 
