@@ -49,7 +49,7 @@ CircularSlider(config: Config(minimumValue: 0.0,
                               maximumValue: 100,
                               totalValue: 100,
                               knobRadius: 10,
-                              radius: 125,TotalProgressView: 20.0
+                              radius: 125,TotalProgressView: 20.0,
                               outercircleColor: Color.init(red: 64/255, green: 66/255, blue: 131/255),
                               innercircleColor: RadialGradient(gradient: Gradient(colors: [.white, .gray]), center: .center, startRadius: 50, endRadius: 100),
                               lineColor: Color(UIColor.lightGray),
