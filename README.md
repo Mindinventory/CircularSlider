@@ -159,7 +159,6 @@ completion: { (value) in
 ## Check out our Work
 <a href="https://dribbble.com/mindinventory"> 
 <img src="https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white" /> </a>
-
 <br></br>
 
 ## 📄 License
