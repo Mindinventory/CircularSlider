@@ -122,6 +122,8 @@ completion: { (value) in
     print(value) // Getting slider value 
 }
 ```
+<br></br>
+
 ## 📱 Check out other lists of our Mobile UI libraries
 
 <a href="https://github.com/Mindinventory?language=kotlin"> 
