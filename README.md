@@ -164,6 +164,8 @@ completion: { (value) in
 
 ## License
 MI-Circular Slider is [MIT-licensed](/LICENSE).
+
+
 If you use our open-source libraries in your project, please make sure to credit us and Give a star to www.mindinventorycom
 
 <a href="https://www.mindinventory.com/contact-us.php?utm_source=gthb&utm_medium=repo&utm_campaign=swift-ui-libraries">
