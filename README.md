@@ -162,7 +162,7 @@ completion: { (value) in
 
 <br></br>
 
-## License
+## 📄 License
 MI-Circular Slider is [MIT-licensed](/LICENSE).
 
 
