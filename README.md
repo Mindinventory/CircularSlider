@@ -137,6 +137,7 @@ completion: { (value) in
 <a href="https://github.com/Mindinventory/react-native-tabbar-interaction"> 
 <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> </a>
 
+<br></br>
 
 ## 💻 Check out other lists of Web libraries
 
@@ -157,12 +158,12 @@ completion: { (value) in
 <a href="https://dribbble.com/mindinventory"> 
 <img src="https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white" /> </a>
 
+<br></br>
+
 ## License
 MI-Circular Slider is [MIT-licensed](/LICENSE).
+If you use our open-source libraries in your project, please make sure to credit us and Give a star to www.mindinventorycom
 
-# Let us know!
-We’d be really happy if you send us links to your projects where you use our component. Just send an email to sales@mindinventory.com And do let us know if you have any questions or suggestion regarding our work.
-
-<a href="https://www.mindinventory.com/contact-us.php?utm_source=gthb&utm_medium=repo&utm_campaign=lassi">
+<a href="https://www.mindinventory.com/contact-us.php?utm_source=gthb&utm_medium=repo&utm_campaign=swift-ui-libraries">
 <img src="https://github.com/Sammindinventory/MindInventory/blob/main/hirebutton.png" width="203" height="43"  alt="app development">
 </a>
