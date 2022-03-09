@@ -14,7 +14,7 @@
 
 ## Preview
 
-Keeping a regular check on the progress of project completion is a bit difficult, but not any more, We have created our own custom progress view to meausre the progress of individual project on individual day based on the task completion.That help us to genrate daily report with the spacific numbers.
+Keeping a regular check on the progress of project completion is a bit difficult, but not anymore, We have created our own custom progress view to measure the progress of the individual project on an individual day based on the task completion. That helps us to generate daily reports with specific numbers.
 
 Using Annular progress view now it's no longer difficult to measure the bang on results!
 
@@ -68,13 +68,13 @@ CircularSlider(config: Config(minimumValue: 0.0,
 ```
 
 ##### minimumValue
-Minimum Value of the slider or you can say start value for the slider. It will set in CGFlote.init
+Minimum Value of the slider or you can say start value for the slider. It will set in CGFloat.init
 
 ##### maximumValue
-Maximum value for the slider which is set in CGFlote.init
+Maximum value for the slider which is set in CGFloat.init
 
 ##### totalValue
-TotalValue will help to meauser progress of the cirle while moving which should be equal to maximum value 
+TotalValue will help to measure progress of the circle while moving which should be equal to maximum value 
 
 ##### knobRadius
 The Radius of the know that how large you want to show
@@ -92,7 +92,7 @@ The color of inner side circle set in RadialGradient.init
 The color of line in inner circle set in Color.init
 
 ##### lineWidth
-The width of line in inner circle set in CGFlote.init
+The width of line in inner circle set in CGFloat.init
 
 ##### tickColor
 The color of tick in 360 degree circle set in Color.init
@@ -165,7 +165,7 @@ completion: { (value) in
 MI-Circular Slider is [MIT-licensed](/LICENSE).
 
 
-If you use our open-source libraries in your project, please make sure to credit us and Give a star to www.mindinventorycom
+If you use our open-source libraries in your project, please make sure to credit us and Give a star to www.mindinventory.com
 
 <a href="https://www.mindinventory.com/contact-us.php?utm_source=gthb&utm_medium=repo&utm_campaign=swift-ui-libraries">
 <img src="https://github.com/Sammindinventory/MindInventory/blob/main/hirebutton.png" width="203" height="43"  alt="app development">
